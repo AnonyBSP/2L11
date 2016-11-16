@@ -2,9 +2,9 @@
 
 #Projeto do Semestre
 
-Dupla:
+Dupla: Matheus Ferreira Gagliotti 
 
-Tema do site:
+Tema do site: Futebol
 
 Público-alvo:
 
