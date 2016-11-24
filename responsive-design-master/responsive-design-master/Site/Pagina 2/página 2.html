@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title> Site sobre Futebol </title>
+      <link rel="icon" type="image/x-icon" href="http://prevethome.com.br/wp-content/uploads/2013/09/PetID-Icone-Historico-Clinico.png" />
+      <link rel="stylesheet" href="estilo2.css">
+      <script src="javascriptexterno.js"></script>
+  </head>
+  <body>
+       <div id="site">
+        <header id="topo">
+          <h1>Blog do Matheus</h1>
+          <h2> Tudo sobre futebol...</h2>
+        </header>
+           
+          <header>
+			<nav>
+				
+			  <ul class="navbar">
+				 <li><a href="file:///C:/Users/Matheus/Desktop/Site/completo.html">Início</a></li>
+				 <li><a href="#">Quem Somos</a>
+					<ul>
+					   <li><a href="#">A nossa História</a></li>
+					</ul>         
+				 </li>
+				 <li><a href="#">A história da Libertadores </a>
+					<ul>
+					   <li><a href="file:///C:/Users/Matheus/Desktop/Site/P%C3%A1gina%203/completo.html#" >A história da Champions</a></li>
+					   
+					</ul>         
+				 </li>
+				 <li><a href="#">Contato</a>
+					<ul>
+					   <li><a href="file:///C:/Users/Matheus/Desktop/Site/Pagina%202/p%C3%A1gina%202.html">Fale com Nós</a></li>
+					</ul>         
+				 </li>
+				 
+
+			</nav>
+		</header>
+           
+           
+           
+         <nav id="menu">
+          <ul>
+              <li><a href="file:///C:/Users/Matheus/Desktop/Site/completo.html">Inicio</a></li>
+              <li><a href="#">Quem Somos </a></li>
+              <li><a href="file:///C:/Users/Matheus/Desktop/Site/Pagina%202/p%C3%A1gina%202.html">Contato </a></li>
+        </nav>
+        <section id="conteudo">
+          <header>
+            <h3> Fale com nós </h3>
+          </header>
+               
+          
+          <article>
+<form oninput="total.value = (nights.valueAsNumber * 99) + 
+ ((guests.valueAsNumber - 1) * 10)">                 
+
+  <label>Nome Completo: *</label>
+  <input type="text" id="full_name" name="full_name" placeholder="Ex: Eu sou um noob" required>
+  <label> Seu e-mail: *</label>
+  <input type="email" id="email_addr" name="email_addr" required>
+
+  <label>Confirme seu e-mail: *</label>
+  <input type="email" id="email_addr_repeat" name="email_addr_repeat" required 
+   oninput="check(this)">
+
+  <label>Data de Nascimento: *</label>
+  <input type="date" id="arrival_dt" name="arrival_dt" required>
+  
+                
+<label> Telefone principal: <input type="number" name="telefone" placeholder="(DDD) 5555-5555">
+        </label>
+        <label> Celular: <input type="number" name="telefone" placeholder="(DDD) 97070-7070">
+        </label>
+            
+
+    
+    <div class="control-group">
+					<label class="control-label&#x20;required" for="assunto">Assunto: </label>					<div class="controls">
+						<input type="text" name="assunto" class="tool_tip" data-placement="left" placeholder="Assunto&#x20;da&#x20;mensagem" title="Assunto&#x20;da&#x20;mensagem" id="assunto" maxlength="100" value="">											</div>
+			</div>
+				
+				<div class="control-group">
+					<label class="control-label&#x20;required" for="mensagem">Mensagem: </label>					<div class="controls">
+						<textarea name="mensagem" placeholder="Sua&#x20;Mensagem" class="tool_tip" data-placement="left" title="Sua&#x20;mensagem" id="mensagem"rows="10" cols="40" maxlength="400"></textarea>											</div>
+				</div>
+                
+                
+  
+                
+               
+        
+<style>
+.button {
+    background-color:green; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2p  x;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+ 
+.column.over {
+  border: 2px dashed #000;
+}
+</style>
+
+
+
+</head>
+<body>
+
+
+<button class="button button3">Enviar</button>
+</form>
+              <div align="center">
+    <p> * Campos Obrigatórios </p>
+              </div>
+              <br> 
+              <br> 
+    <p> Arraste o like para a faixa roxa se você gosto da nossa página, ou deslike se você não gostou.  </p>
+<style type="text/css">
+	#boxA, #boxB {	float:left; width:100px; height:200px; padding:10px; margin:10px; font-size:70%;
+	}
+
+	#boxA{background-color: aqua}
+
+	#boxB{background-color: blueviolet}
+
+	#drag, #drag2{
+		width:30px; height: 30px;  padding:5px; border:3px black solid; margin:5px; line-height:50px;}
+
+	#drag{background-image:url(http://www.pedbikesrc.ce.ufl.edu/images/pedbike/images/likebutton.jpg)
+    }
+	#drag2{background-image:url(http://www.abstraktmg.com/wp-content/uploads/2012/02/Dislike-buying-fans-36x36.jpg)
+    }	
+</style>
+<script>
+
+//qdo o user inicia um drag, guardamos no dataset do evento o id do obj
+
+	function dragStart(ev) {
+		ev.dataTransfer.setData("ID", ev.target.getAttribute('id'));
+	}
+
+
+//qdo o usuário arrasta sobre um dos painéis, retornamos false p que o evento não se propague p/ o browser
+
+	function dragOver(ev) {
+		return false;
+	}
+//qdo soltamos o elem sobre o painel, movemos o elem, lendo seu id do dataset do evento
+
+	function dragDrop(ev){
+		var ident=ev.dataTransfer.getData("ID");
+		ev.target.appendChild(document.getElementById(ident));
+	}
+
+</script>
+    
+<!-- Painel 1  -->
+	<div id="boxA" ondrop="return dragDrop(event)" ondragover="return dragOver(event)">
+
+	<div id="drag" draggable="true" ondragstart="return dragStart(event)">Like</div>
+
+	<div id="drag2" draggable="true" ondragstart="return dragStart(event)">Dislike</div>
+</div>
+
+<!-- Painel 2  -->	
+	<div id="boxB" ondrop="return dragDrop(event)" ondragover="return dragOver(event)"</div>
+
+
+<head>
+
+
+<body>
+
+  </article>
+          <nav id="final">
+          <ul>
+  <li><a href="#"> Voltar para o Inicio</a></li>
+              </nav>
+              
+          <nav id="footer"> 
+          <footer>
+            &copy Copyright © 2016 todos os direitos reservados.
+          </footer>
+              </nav>
+        
+        </section>   
+        
+
+          
+        
+        
+         
+    </div>
+  </body>
+</html>

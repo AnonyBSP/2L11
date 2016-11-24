@@ -1,0 +1,170 @@
+/* CSS Document */
+/*formatações gerais*/
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	text-align:center;
+
+   background-image: url(http://api.ning.com/files/WCBcu*zlD6M8dkFWdKP3lM9wBVovuqD0adCC*HYocjTY2C8Uo85hJWQPMWLPudTsBd6kM1U*K*vqLeJ4KOATwWrd1lXydyZ0/DSC02833.JPG)
+} ;
+
+----------------------------------------------------------------------------------------------------
+nav	{
+	width: 100%; /* Abrange toda a largura da pagina */
+	height: 50px; 
+	margin: 0; /* Retira os espacos entre a tela e o menu */
+	z-index: 99; /* Mantém o menu acima de outros elementos da pagina */
+	position: relative; 
+	background-color: #366b82; /* Aplica a cor azul no fundo */
+}
+	
+.navbar	{
+	height: 50px;
+    padding: 0;
+	margin: 0;
+	position: absolute; /* Garante que menu nao afeta outros elementos da pagina */
+	border-right: 1px solid #54879d; 
+}
+	
+.navbar li {
+	height: auto;
+	width: 150px;  /* Cada item de menu terá 150px de largura */
+	float: left;  /* Organiza os itens de menu horizontalmente */
+	text-align: center;  /* Mantem o alinhamento de todo o texto no centro do box */
+	list-style: none;  /* Remove o estilo padrao da lista (bullets) */
+	font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+	padding: 0;
+	margin: 0;
+	background-color: #366b82;
+}
+			
+.navbar a	{							
+	padding: 18px 0;  /* Adiciona padding na parte superior e inferior para que o texto fique centralizado verticalmente */
+	border-left: 1px solid #54879d; /* Cria uma borda ligeiramente mais claro do que o tom de azul usado no fundo. Combinado com a borda direita, o que cria um efeito agradável. */
+	border-right: 1px solid #1f5065; /* Cria uma borda ligeiramente mais escura do que o tom de azul usado no fundo.  Combinado com a borda esquerda, o que cria um efeito agradável. */
+	text-decoration: none;  /* Remove o estilo padrao do hyperlink. */
+	color: white; /* Aplica cor de texto branco. */
+	display: block; /* Mostra os hiperlinks como blocos de elementos deixando toda a area clicavel e nao apenas os textos */
+}
+		
+ .navbar li:hover, a:hover {
+	background-color: #54879d; /* Novo tom de azul para o efeito mouse over */
+} 
+		
+
+li ul 	{
+	display: none;  /* Esconde o menu drop-down */
+	height: auto;									
+	margin: 0; /* Alinha o box drop-down bem embaixo do item de menu */
+	padding: 0; /* Alinha o box drop-down bem embaixo do item de menu */			
+}				
+
+.navbar li:hover ul{
+	display: block; /* Mostra o menu drop-down box quando o mouse passar sobre o item de menu */
+}
+						
+.navbar li ul li {
+	background-color: #54879d;
+} 
+
+.navbar li ul li a{
+	border-left: 1px solid #1f5065; 
+	border-right: 1px solid #1f5065; 
+	border-top: 1px solid #74a3b7; 
+	border-bottom: 1px solid #1f5065; 
+}
+				
+.navbar li ul li a:hover	{
+	background-color: #366b82;
+}
+------------------------------------------------------------------------------------------------------
+/* posso usar uma mesma declaração para vários seletores - separo com vírgula*/
+
+header , article , aside , nav , section {display:block}
+
+/* seletor via ID */
+#site{
+	text-align:left;
+	margin:10px auto;
+	width:800px;
+}
+/* seletor via tag e id - declaração do Fábio é redundante, podemos usar simplesmente #topo*/
+
+header#topo{
+	width: 1020px; 
+    height:170px;
+	 background-image: url("http://www.publicdomainpictures.net/pictures/20000/velka/grass-background.jpg");
+}
+/* nav de id menu */
+#menu{
+	width: 1000px; 
+    height:30px;
+	background:#366b82;
+	padding:10px;
+}
+/*elemento da lista não ordenada que está dentro da tag de id #menu */
+#menu ul li{
+	list-style: none;
+	display:inline;
+	margin:10px;
+}
+/* section - pq tenho uma só section na minha página*/
+#conteudo{
+	width: 1000px;
+	height:500px;
+	float:left; 	
+	background:aquamarine;
+	padding:10px;
+	
+}
+#conteudo header{
+	background:#987654;
+}
+
+#conteudo article{
+	height:1700px;
+    width:1000px;
+	background-color:aquamarine
+}
+#conteudo footer{
+	background:yellow;
+	height:30px;
+    width:1000px;
+}
+/* #aside é id de um nav - evitem colocar nomes de classes ou id que sejam iguais aos nomes de tags*/
+#aside{
+    padding: 2px 30px;
+	display: inline-block;/*nesse caso posso usar block (sem o inline)*/
+    float:left; 
+}
+#linha{ 
+    background:yellow; 
+}
+#final{
+	height:30px;
+	background:black;
+	padding:10px;
+}
+img{float:left;
+}
+p{	font-family:Arial, Times New Roman, sans-serif;
+font-size:15px;	
+}
+h1{	font-family: Bradley Hand ITC, Arial,  sans-serif;
+font-size:65px;	
+}
+h2{	font-family:Papyrus, Comic Sans, sans-serif;
+font-size:45px;	color: black; 
+}
+h3{	font-family:Papyrus, Comic Sans, sans-serif;
+font-size:45px; color: blue; 
+}
+h4{	font-family:Times New Roman, Comic Sans, sans-serif;
+font-size:25px; color: black; 
+}
+
+
+
